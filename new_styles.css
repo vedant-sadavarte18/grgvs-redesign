@@ -1,0 +1,62 @@
+/* Additional Styles for Multi-page Architecture */
+.page-header {
+    padding: 160px 0 40px;
+    background: linear-gradient(135deg, #0D47A1 0%, #1565C0 100%);
+    color: var(--text-light);
+    text-align: center;
+}
+
+.theme-green .page-header {
+    background: linear-gradient(135deg, #001200 0%, rgba(44, 95, 45, 0.9) 100%);
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.inner-page .navbar {
+    background: #ffffff;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    padding: 10px 0;
+}
+
+.inner-page .navbar .logo-text, .inner-page .navbar .nav-links li a {
+    color: var(--primary-color);
+}
+
+.floating-contact {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: var(--secondary-color);
+    color: var(--text-light);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 4px 15px rgba(255, 140, 66, 0.4);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.floating-contact:hover {
+    transform: scale(1.1);
+}
+
+.content-block h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
