@@ -90,15 +90,15 @@
 <form name="submit-to-google-sheet" style="display:flex; flex-direction:column; gap:20px; max-width:100%;"><input name="sheet_name" type="hidden" value="Donate"/>
 <div style="display:flex; flex-direction:column; text-align:left;">
 <label style="margin-bottom:8px; color:var(--text-dark); font-weight:500;">Your Name</label>
-<input name="Unknown" required="" style="padding:12px; border:1px solid #e0e0e0; border-radius:5px; font-family:inherit; background:#fbfbfb;" type="text"/>
+<input name="Name" required="" style="padding:12px; border:1px solid #e0e0e0; border-radius:5px; font-family:inherit; background:#fbfbfb;" type="text"/>
 </div>
 <div style="display:flex; flex-direction:column; text-align:left;">
 <label style="margin-bottom:8px; color:var(--text-dark); font-weight:500;">Contact Number</label>
-<input name="Unknown" required="" style="padding:12px; border:1px solid #e0e0e0; border-radius:5px; font-family:inherit; background:#fbfbfb;" type="tel"/>
+<input name="Phone" required="" style="padding:12px; border:1px solid #e0e0e0; border-radius:5px; font-family:inherit; background:#fbfbfb;" type="tel"/>
 </div>
 <div style="display:flex; flex-direction:column; text-align:left;">
 <label style="margin-bottom:8px; color:var(--text-dark); font-weight:500;">Your Email</label>
-<input name="Unknown" required="" style="padding:12px; border:1px solid #e0e0e0; border-radius:5px; font-family:inherit; background:#fbfbfb;" type="email"/>
+<input name="Email" required="" style="padding:12px; border:1px solid #e0e0e0; border-radius:5px; font-family:inherit; background:#fbfbfb;" type="email"/>
 </div>
 <div style="display:flex; flex-direction:column; text-align:left;">
 <label style="margin-bottom:8px; color:var(--text-dark); font-weight:500;">Nationality</label>
@@ -123,11 +123,11 @@
 </div>
 <div style="display:flex; flex-direction:column; text-align:left;">
 <label style="margin-bottom:8px; color:var(--text-dark); font-weight:500;">Subject</label>
-<input name="Unknown" required="" style="padding:12px; border:1px solid #e0e0e0; border-radius:5px; font-family:inherit; background:#fbfbfb;" type="text"/>
+<input name="Amount" required="" style="padding:12px; border:1px solid #e0e0e0; border-radius:5px; font-family:inherit; background:#fbfbfb;" type="text"/>
 </div>
 <div style="display:flex; flex-direction:column; text-align:left;">
 <label style="margin-bottom:8px; color:var(--text-dark); font-weight:500;">Your message (optional)</label>
-<textarea name="Unknown" rows="3" style="padding:12px; border:1px solid #e0e0e0; border-radius:5px; font-family:inherit; background:#fbfbfb;"></textarea>
+<textarea name="Message" rows="3" style="padding:12px; border:1px solid #e0e0e0; border-radius:5px; font-family:inherit; background:#fbfbfb;"></textarea>
 </div>
 <button class="btn-primary" style="align-self:flex-start; margin-top:10px; border:none; cursor:pointer; font-family:inherit;" type="submit">Submit</button>
 </form>
@@ -189,7 +189,6 @@
 </div>
 </footer>
 <script src="script.js"></script>
-
 <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbxyMCkBDtkEmrdVDGQoi7EnF0yhh0rUL8gc7AMyG_yLtWghzJjE8E4eSfxfUcLYN9yV/exec';
       const form = document.forms['submit-to-google-sheet'];

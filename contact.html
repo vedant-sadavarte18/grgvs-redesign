@@ -74,23 +74,23 @@
 <form name="submit-to-google-sheet" style="display:flex; flex-direction:column; gap:20px;"><input name="sheet_name" type="hidden" value="Contact"/>
 <div>
 <label style="display:block; margin-bottom:8px; color:var(--text-dark); font-weight:500;">Your Name</label>
-<input name="Unknown" onblur="this.style.borderColor='#eee'" onfocus="this.style.borderColor='var(--primary-color)'" style="width:100%; padding:14px; border:1px solid #eee; border-radius:8px; font-family:inherit; background:#f9f9f9; outline:none; transition:border 0.3s;" type="text"/>
+<input name="Name" onblur="this.style.borderColor='#eee'" onfocus="this.style.borderColor='var(--primary-color)'" style="width:100%; padding:14px; border:1px solid #eee; border-radius:8px; font-family:inherit; background:#f9f9f9; outline:none; transition:border 0.3s;" type="text"/>
 </div>
 <div>
 <label style="display:block; margin-bottom:8px; color:var(--text-dark); font-weight:500;">Your Email</label>
-<input name="Unknown" onblur="this.style.borderColor='#eee'" onfocus="this.style.borderColor='var(--primary-color)'" style="width:100%; padding:14px; border:1px solid #eee; border-radius:8px; font-family:inherit; background:#f9f9f9; outline:none; transition:border 0.3s;" type="email"/>
+<input name="Email" onblur="this.style.borderColor='#eee'" onfocus="this.style.borderColor='var(--primary-color)'" style="width:100%; padding:14px; border:1px solid #eee; border-radius:8px; font-family:inherit; background:#f9f9f9; outline:none; transition:border 0.3s;" type="email"/>
 </div>
 <div>
 <label style="display:block; margin-bottom:8px; color:var(--text-dark); font-weight:500;">Your Number</label>
-<input name="Unknown" onblur="this.style.borderColor='#eee'" onfocus="this.style.borderColor='var(--primary-color)'" style="width:100%; padding:14px; border:1px solid #eee; border-radius:8px; font-family:inherit; background:#f9f9f9; outline:none; transition:border 0.3s;" type="text"/>
+<input name="Phone" onblur="this.style.borderColor='#eee'" onfocus="this.style.borderColor='var(--primary-color)'" style="width:100%; padding:14px; border:1px solid #eee; border-radius:8px; font-family:inherit; background:#f9f9f9; outline:none; transition:border 0.3s;" type="text"/>
 </div>
 <div>
 <label style="display:block; margin-bottom:8px; color:var(--text-dark); font-weight:500;">Subject</label>
-<input name="Unknown" onblur="this.style.borderColor='#eee'" onfocus="this.style.borderColor='var(--primary-color)'" style="width:100%; padding:14px; border:1px solid #eee; border-radius:8px; font-family:inherit; background:#f9f9f9; outline:none; transition:border 0.3s;" type="text"/>
+<input name="Subject" onblur="this.style.borderColor='#eee'" onfocus="this.style.borderColor='var(--primary-color)'" style="width:100%; padding:14px; border:1px solid #eee; border-radius:8px; font-family:inherit; background:#f9f9f9; outline:none; transition:border 0.3s;" type="text"/>
 </div>
 <div>
 <label style="display:block; margin-bottom:8px; color:var(--text-dark); font-weight:500;">Your message</label>
-<textarea name="Unknown" onblur="this.style.borderColor='#eee'" onfocus="this.style.borderColor='var(--primary-color)'" rows="5" style="width:100%; padding:14px; border:1px solid #eee; border-radius:8px; font-family:inherit; background:#f9f9f9; resize:none; outline:none; transition:border 0.3s;"></textarea>
+<textarea name="Message" onblur="this.style.borderColor='#eee'" onfocus="this.style.borderColor='var(--primary-color)'" rows="5" style="width:100%; padding:14px; border:1px solid #eee; border-radius:8px; font-family:inherit; background:#f9f9f9; resize:none; outline:none; transition:border 0.3s;"></textarea>
 </div>
 <button class="btn-primary" style="align-self:flex-start; border:none; padding:15px 40px; margin-top:10px; font-size:1.1rem; border-radius:50px;" type="submit">Send Message</button>
 </form>
@@ -179,7 +179,6 @@
 </div>
 </footer>
 <script src="script.js"></script>
-
 <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbxyMCkBDtkEmrdVDGQoi7EnF0yhh0rUL8gc7AMyG_yLtWghzJjE8E4eSfxfUcLYN9yV/exec';
       const form = document.forms['submit-to-google-sheet'];
