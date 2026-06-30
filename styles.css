@@ -771,3 +771,57 @@ footer {
 .sdg-card:hover img {
     transform: scale(1.1);
 }
+
+/* Blog Cards CSS */
+#blogs .blog-card {
+    background: #f8fbfa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    padding: 30px;
+    transition: transform 0.3s ease;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#blogs .blog-card:hover {
+    transform: translateY(-5px);
+}
+#blogs .blog-title {
+    color: var(--secondary-color);
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    /* Limit title to 3 lines if needed, but usually 3 is fine */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+#blogs .blog-desc {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    /* Limit description text so it doesn't overflow the square */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+#blogs .blog-btn {
+    background: #2C5F2D;
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s;
+    margin-top: auto; /* Pushes the button to the bottom of the flex container */
+    align-self: flex-start; /* Keeps the button from stretching full width */
+}
+#blogs .blog-btn:hover {
+    background: #1f4420;
+}
