@@ -177,7 +177,7 @@
             const originalText = submitBtn.innerText;
             submitBtn.innerText = 'Submitting...';
             
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            fetch(scriptURL, { method: 'POST', body: new FormData(form), mode: 'no-cors'})
               .then(response => {
                 alert('Success! Your submission has been received.');
                 form.reset();
