@@ -128,3 +128,9 @@ body {
 .blog-article-content a:hover {
     color: var(--primary-color);
 }
+
+@media (min-width: 768px) {
+    .grid-2-cols {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}

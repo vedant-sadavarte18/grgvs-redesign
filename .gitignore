@@ -1,0 +1,28 @@
+# Node.js
+node_modules/
+npm-debug.log
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Environment variables
+.env
+.env.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary files created during the development
+find_nari.js
+fix.js
+*.ipynb
